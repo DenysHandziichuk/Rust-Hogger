@@ -1,11 +1,50 @@
-# 🚀 Fast File Downloader
+# Rust Internet Traffic Hogger (Educational)
 
-A high-performance Rust-based file downloader that simultaneously downloads large files from multiple URLs with concurrency! 🖥️💨
+A Rust-based **network traffic generator** built to explore **async networking**, **concurrency**, and **performance** using modern Rust tooling.
 
-> **Note**: This project is intended for **educational purposes** to demonstrate file downloading and concurrency handling in Rust.
+This project was created **strictly for educational and experimental purposes** to better understand how high-throughput HTTP downloads behave under parallel load.
 
-## 📜 Features:
-- 🗂️ Download large files (e.g., 100MB, 512MB, 1GB)
-- ⚡ Multi-threaded downloads for faster performance
-- 💻 Written in Rust for efficiency and speed
-- 🌐 Supports concurrent downloading from multiple sources
+---
+
+## ⚠️ Educational Use Only
+
+> **This project is intended for learning purposes only.**  
+> Do **NOT** use this tool to disrupt networks, violate terms of service, or perform unauthorized stress testing.
+
+The author takes **no responsibility** for misuse.
+
+---
+
+## 🧠 What This Project Demonstrates
+
+- Asynchronous programming with **Tokio**
+- Concurrent stream handling with `futures_util`
+- Efficient HTTP downloading using `reqwest`
+- Atomic counters for real-time bandwidth tracking
+- Safe shared-state management with `Arc` + `AtomicU64`
+
+---
+
+## 🚀 How It Works
+
+- Continuously downloads large public test files
+- Runs multiple concurrent downloads in parallel
+- Tracks total data consumed in real time
+- Prints bandwidth usage statistics at fixed intervals
+
+---
+
+## 🛠️ Tech Stack
+
+- Rust
+- Tokio (async runtime)
+- Reqwest (HTTP client)
+- futures-util (stream concurrency)
+
+---
+
+## 📊 Example Output
+
+```text
+🚀 Internet Hogger Active...
+📊 Total Consumed: 1.42 GB (1456 MB)
