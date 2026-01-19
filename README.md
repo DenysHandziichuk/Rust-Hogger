@@ -33,6 +33,27 @@ The author takes **no responsibility** for misuse.
 - Prints bandwidth usage statistics at fixed intervals
 
 ---
+# DenysHandziichuk/Counter-React
+
+## Description
+This repository contains a project written in **JavaScript**.
+
+## Tech Stack
+- **Languages:** JavaScript
+- **Frameworks:** Vite, React
+
+## Installation
+```bash
+npm install
+```
+
+## Usage
+```bash
+npm run dev
+```
+
+
+
 
 ## 🛠️ Tech Stack
 
